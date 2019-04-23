@@ -27,7 +27,7 @@ public class NotesScript : MonoBehaviour
 
 		if (isInLine)
 		{
-			CheckInput(_lineKey);
+			CheckInput(_lineKey); //まだここら辺よくわかってない
 		}
 	}
 

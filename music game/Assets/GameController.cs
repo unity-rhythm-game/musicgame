@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
 	public void StopGame()
 	{
 		startButton.SetActive(true);
-		stopButton.SetActive(false);//とりあえず反対のこと言ってみたらうまくいった
+		stopButton.SetActive(false);//とりあえず反対のこと言ってみたらうまくいったと思ってたがゲームは泊まってなかった
 		_audioSource.Stop();
 		_isPlaying = false;
 	}
@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-/*void SpawnNotes(int num)
+	/*void SpawnNotes(int num)
 	{
 		Instantiate(notes[num],
 			new Vector3(-4.0f + (2.0f * num), 10.0f, 0),
@@ -110,7 +110,7 @@ public class GameController : MonoBehaviour
 		return Time.time - _startTime;
 	}
 
-	public void GoodTimingFunc(int num)
+	public void GoodTimingFunc(int num) //ここが認知されてない
 	{
 		Debug.Log("Line:" + num + " good!");
 		Debug.Log(GetMusicTime());
